@@ -1,3 +1,167 @@
 body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 2rem; line-height: 1.6; }
 header h1 { margin-bottom: 0.5rem; }
 a { text-decoration: none; }
+/* highlight your name in author lists */
+.me {
+    color: #e68e36; /* warm orange */
+    font-weight: bold;
+    background: none; /* remove highlight background */
+  }
+  
+  
+  
+/* Force dark background and light text regardless of OS setting */
+body {
+    background-color: #152031; /* deep dark blue */
+    color: #d4d4d4;            /* light grey text */
+  }
+  
+  a {
+    color: #7998ee;            /* bluish link color */
+  }
+  
+  header,
+  .hsub,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    background-color: #152031;
+    color: #ffffff;            /* make headings pure white */
+  }
+  
+  /* Ensure profile image stays circular */
+  .avatar {
+    width: 300px;   /* bigger */
+    height: 300px;  /* keep height equal to width for perfect circle */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #1d2b46;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+}
+
+  
+/* Layout for hero section */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr auto; /* text on left, image on right */
+    gap: 28px;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+/* Center content with fixed max width */
+.page {
+    max-width: 900px;     /* adjust width to match your desired look */
+    margin: 0 auto;       /* centers the block horizontally */
+    padding: 0 20px;      /* small side padding so text doesn’t touch the edge */
+  }
+
+  
+  .hero__text {
+    max-width: 600px;
+  }
+  
+  .avatar-wrap {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .avatar {
+    width: 300px;   /* bigger */
+    height: 300px;  /* keep height equal to width for perfect circle */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #1d2b46;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+}
+
+  
+  @media (max-width: 720px) {
+    .hero {
+      grid-template-columns: 1fr; /* stack on small screens */
+      text-align: center;
+    }
+    .avatar {
+      margin-top: 1rem;
+    }
+  }
+  
+  /* Tighten spacing inside each publication item */
+.pub-item .pub-title {
+    margin: 0 0 4px 0;     /* no top margin, small bottom margin */
+    line-height: 1.25;     /* slightly tighter title line-height */
+  }
+  
+  .pub-item .pub-authors {
+    margin: 0 0 2px 0;     /* no extra gap above authors */
+  }
+  
+  .pub-item .pub-venue {
+    margin: 0 0 6px 0;     /* small gap before links */
+  }
+  
+  /* Keep the gap *between* different publications */
+  .pub-item + .pub-item {
+    margin-top: 24px;
+  }
+
+  /* Industry section tweaks */
+.pub-item .pub-authors { /* team line */
+    color: #a9abb1;       /* muted, like authors style */
+    margin: 2px 0 2px 0;
+  }
+  
+  .pub-item .pub-venue {  /* dates line */
+    margin: 0 0 6px 0;
+  }
+  
+  .contact-links {
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .contact-links a {
+    color: #7998ee; /* matches your link color */
+    text-decoration: none;
+  }
+  
+  .contact-links a:hover {
+    text-decoration: underline;
+  }
+
+  .contact-section {
+    text-align: left;        /* left-align everything */
+    font-size: 16px;         /* match body text size */
+    margin: 1rem 0;
+  }
+  
+  .contact-section strong {
+    font-size: 18px;         /* slightly larger for section title */
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-section ul {
+    list-style: disc;        /* explicit bullet points */
+    padding-left: 20px;      /* indent bullets properly */
+    margin: 0;
+  }
+  
+  .contact-section li {
+    margin: 6px 0;
+  }
+  
+  .contact-section a {
+    color: #7998ee;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .contact-section a:hover {
+    text-decoration: underline;
+  }
+  
+  

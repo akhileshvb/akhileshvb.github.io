@@ -1,16 +1,156 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Site</title>
+  <title>Akhilesh Balasingam</title>
+  <meta name="description" content="Akhilesh Balasingam — research website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header><h1>Hello, GitHub Pages (local) 👋</h1></header>
-  <main>
-    <p>If you can see this locally, you’re good to go.</p>
-    <a href="about.html">About</a>
-  </main>
+  <div class="page">
+    <!-- Hero -->
+    <header class="hero">
+      <div class="hero__text">
+        <h1 class="name">Akhilesh Balasingam</h1>
+        <div id="bio" class="lede"></div>
+      </div>
+
+      <figure class="avatar-wrap">
+        <img class="avatar" src="img/profile.jpg" alt="Akhilesh Balasingam headshot" />
+      </figure>
+    </header>
+
+    <hr class="rule" />
+
+    <!-- Publications -->
+    <section class="section">
+      <h2 class="section__title">Publications</h2>
+
+      <!-- Honors Thesis -->
+      <article class="pub-item">
+        <h3 class="pub-title">
+          Systolic-Sim: A Framework for the Rapid Prototyping of Custom Systolic Architectures for Recurrence-Based Computation
+        </h3>
+        <div class="pub-authors">
+          <span class="me">Akhilesh Balasingam</span>. Advised by Fredrik Kjolstad.
+        </div>
+        <div class="pub-venue"><em>Honors Thesis, Stanford University. June 2025</em></div>
+        <div class="pub-links">
+          [ <a href="papers/Balasingam_Akhilesh_Thesis.pdf?v=1" target="_blank" rel="noopener">paper</a> ]
+        </div>
+      </article>
+
+      <!-- Onyx (VLSI 2024) -->
+      <article class="pub-item">
+        <h3 class="pub-title">Onyx: A 12nm 756 GOPS/W Coarse-Grained Reconfigurable Array for Accelerating Dense and Sparse Applications</h3>
+        <div class="pub-authors">
+          Kalhan Koul, Maxwell Strange, Jackson Melchert, Alex Carsello, Yuchen Mei, Olivia Hsu, Taeyoung Kong, Po-Han Chen, Huifeng Ke, Keyi Zhang, Qiaoyi Liu, Gedeon Nyengele,
+          <span class="me">Akhilesh Balasingam</span>, Jayashree Adivarahan, Ritvik Sharma, Zhouhua Xie, Christopher Torng, Joel Emer, Fredrik Kjolstad, Mark Horowitz, Priyanka Raina.
+        </div>
+        <div class="pub-venue"><em>IEEE VLSI 2024</em></div>
+        <div class="pub-links">
+          [ <a href="papers/Onyx_VLSI.pdf?v=1" target="_blank" rel="noopener">paper</a> ]
+        </div>
+      </article>
+
+      <!-- Onyx (HotChips 2024) -->
+      <article class="pub-item">
+        <h3 class="pub-title">Onyx: A Programmable Accelerator for Sparse Tensor Algebra</h3>
+        <div class="pub-authors">
+          Kalhan Koul, Maxwell Strange, Jackson Melchert, Alex Carsello, Yuchen Mei, Olivia Hsu, Taeyoung Kong, Po-Han Chen, Huifeng Ke, Keyi Zhang, Qiaoyi Liu, Gedeon Nyengele,
+          <span class="me">Akhilesh Balasingam</span>, Jayashree Adivarahan, Ritvik Sharma, Zhouhua Xie, Christopher Torng, Joel Emer, Fredrik Kjolstad, Mark Horowitz, Priyanka Raina.
+        </div>
+        <div class="pub-venue"><em>IEEE HotChips 2024</em></div>
+      </article>
+
+      <!-- 3-D CGRA with NEM relays (Integration 2022) -->
+      <article class="pub-item">
+        <h3 class="pub-title">3-D Coarse-Grained Reconfigurable Array Using Multi-Pole NEM Relays for Programmable Routing</h3>
+        <div class="pub-authors">
+          Akash Levy, Michael Oduoza, <span class="me">Akhilesh Balasingam</span>, R. T. Howe, Priyanka Raina.
+        </div>
+        <div class="pub-venue"><em>Integration 2022</em></div>
+        <div class="pub-links">
+          [ <a href="papers/Integration_VLSI_Journal.pdf?v=1" target="_blank" rel="noopener">paper</a> ]
+        </div>
+      </article>
+
+      <!-- Efficient Routing with NEM relays (ASP-DAC 2022) -->
+      <article class="pub-item">
+        <h3 class="pub-title">Efficient Routing in Coarse-Grained Reconfigurable Arrays Using Multi-Pole NEM Relays</h3>
+        <div class="pub-authors">
+          Akash Levy, Michael Oduoza, <span class="me">Akhilesh Balasingam</span>, R. T. Howe, Priyanka Raina.
+        </div>
+        <div class="pub-venue"><em>ASP-DAC 2022</em></div>
+        <div class="pub-links">
+          [ <a href="papers/ASP-DAC.pdf?v=1" target="_blank" rel="noopener">paper</a> ]
+        </div>
+      </article>
+
+      <!-- 3T RRAM Monte Carlo (SISPAD 2020) -->
+      <article class="pub-item">
+        <h3 class="pub-title">Monte Carlo Simulation of a Three-Terminal RRAM with Applications to Neuromorphic Computing</h3>
+        <div class="pub-authors">
+          <span class="me">Akhilesh Balasingam</span>, Akash Levy, Haitong Li, Priyanka Raina.
+        </div>
+        <div class="pub-venue"><em>SISPAD 2020</em></div>
+        <div class="pub-links">
+          [ <a href="papers/Monte_Carlo_Simulation_of_a_Three-Terminal_RRAM_with_Applications_to_Neuromorphic_Computing.pdf?v=1" target="_blank" rel="noopener">paper</a> ]
+        </div>
+      </article>
+    </section>
+
+    <hr class="rule" />
+
+    <!-- Industry Experience -->
+    <section class="section">
+      <h2 class="section__title">Industry Experience</h2>
+
+      <article class="pub-item">
+        <h3 class="pub-title">Apple</h3>
+        <div class="pub-authors">CoreOS, Vector and Numerics Team, Machine Learning Subgroup</div>
+        <div class="pub-venue"><em>Intern 2024, 2025</em></div>
+        <ul>
+          <li>Developed high-performance machine-learning kernels for embedded cores (2024).</li>
+          <li>Developed a framework for low-precision model quantization on embedded cores (2025).</li>
+        </ul>
+      </article>
+    </section>
+
+    <hr class="rule" />
+
+    <footer class="footer">
+      <div class="contact-section">
+        <strong>CONTACT</strong>
+        <ul>
+          <li><a href="mailto:avb03@stanford.edu">Email</a></li>
+          <li><a href="papers/Resume.pdf?v=1" target="_blank" rel="noopener">CV</a></li>
+          <li><a href="https://www.linkedin.com/in/akhilesh-balasingam/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <hr class="rule" />
+  </div>
+
+  <!-- Markdown renderer -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    (async function loadBio() {
+      try {
+        const res = await fetch('bio.md', { cache: 'no-store' });
+        const md  = await res.text();
+        document.getElementById('bio').innerHTML = marked.parse(md);
+      } catch (e) {
+        document.getElementById('bio').textContent =
+          'Error loading bio.md — please ensure the file exists at the site root.';
+        console.error(e);
+      }
+    })();
+  </script>
 </body>
 </html>
